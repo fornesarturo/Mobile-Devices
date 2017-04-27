@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_one_note"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="mx.itesm.firstpartialreview.OneNote">
+
+    <Button
+        android:text="MENU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/note_buttonMenu"
+        android:onClick="goHome" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:id="@+id/note_textView_result" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:layout_alignBottom="@+id/note_button_add"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="58dp"
+        android:id="@+id/note_editText_entry" />
+
+    <Button
+        android:text="ADD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="117dp"
+        android:id="@+id/note_button_add"
+        android:layout_below="@+id/note_textView_result"
+        android:layout_centerHorizontal="true"
+        android:onClick="addValue" />
+
+    <Button
+        android:text="FIND"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/note_editText_entry"
+        android:layout_alignStart="@+id/note_button_add"
+        android:id="@+id/note_button_find"
+        android:onClick="findValue" />
+
+    <Button
+        android:text="DELETE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/note_button_find"
+        android:layout_alignEnd="@+id/note_button_find"
+        android:id="@+id/note_button_delete"
+        android:onClick="deleteValue" />
+</RelativeLayout>

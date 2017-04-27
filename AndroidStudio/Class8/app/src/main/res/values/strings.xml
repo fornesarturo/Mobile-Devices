@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Class8</string>
+    <string name="take_photo">TAKE PHOTO</string>
+    <string name="save_photo">SAVE PHOTO</string>
+    <string name="take_video">TAKE VIDEO</string>
+    <string name="toast">HEY GUYZ</string>
+</resources>
